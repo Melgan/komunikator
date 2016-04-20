@@ -24,10 +24,10 @@ public class Client extends User {
     @Override
     public void connect() {
         try {
-            InetAddress locIP = InetAddress.getByName("192.168.0.101");
+            InetAddress locIP = InetAddress.getByName("10.50.151.159");
           //  socket = new Socket(9999, 0, locIP);
           //  socket = new Socket("localhost", 9999);       oryginalny
-              socket = new Socket(locIP, 9999);
+              socket = new Socket(locIP, 4444);
 
         } catch (UnknownHostException e) {
             System.err.println("The host not found! " + e);
